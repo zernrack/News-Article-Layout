@@ -5,6 +5,7 @@ import Badges from "./Badges";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import CalendarMonthRoundedIcon from "@mui/icons-material/CalendarMonthRounded";
 import VisibilityIcon from "@mui/icons-material/Visibility";
+import DragIndicatorIcon from "@mui/icons-material/DragIndicator";
 import CloseIcon from "@mui/icons-material/Close";
 
 function ContentsPage() {
@@ -83,6 +84,7 @@ function ContentsPage() {
               key={content.id}
             >
               <div className="flex flex-row">
+                  <DragIndicatorIcon className="flex items-center"/>
                 <div className="flex items-center gap-2 pr-2">
                   <input
                     type="checkbox"
@@ -93,6 +95,7 @@ function ContentsPage() {
                 </div>
                 <div className="title font-bold">{content.title}</div>
               </div>
+
               <div className="container-secondLine flex gap-2 justify-between">
                 <div className="container-author-date flex ml-6">
                   <div className="author flex gap-1">
