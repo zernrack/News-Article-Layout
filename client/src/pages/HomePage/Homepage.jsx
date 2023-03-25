@@ -25,7 +25,7 @@ function ArticlePage() {
           >
             DELETE
           </button>
-          <div className="search-container flex justify-end ml-[70rem]">
+          <div className="search-container flex justify-end ml-[68rem]">
             <input
               className="border-solid border-2 bg-white rounded-md "
               type="text"
