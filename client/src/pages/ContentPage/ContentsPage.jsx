@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal } from "@mui/material";
-import data from "../../MOCK_DATA.json";
+import MOCK_DATA from "../../MOCK_DATA.json";
 import Badges from "./Badges";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import CalendarMonthRoundedIcon from "@mui/icons-material/CalendarMonthRounded";
@@ -11,6 +11,7 @@ function ContentsPage() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedContent, setSelectedContent] = useState(null);
   const [selectedCheckboxes, setSelectedCheckboxes] = useState([]);
+  const [data, setData] = useState(MOCK_DATA);
 
   const handleCheckboxChange = (id) => {
     if (selectedCheckboxes.includes(id)) {
